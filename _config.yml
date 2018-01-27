@@ -1,0 +1,19 @@
+title: Kevin and Chan
+email: 
+description: > # this means to ignore newlines until "baseurl:"
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://kevinandchan.com"
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - node_modules
+  - gulpfile.js
+
+timezone: America/New_York
