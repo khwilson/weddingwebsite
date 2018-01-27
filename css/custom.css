@@ -88,12 +88,16 @@ hr {
 .jumbotron {
   background-color: transparent;
   background-image: url("/images/farm.jpg");
-  background-size: 100%;
+  background-size: auto 100%;
   background-position: center;
-  min-height: 60%;
-  min-height: 60vh;
+  min-height: 100%;
+  min-height: 100vh;
   padding-top: 1rem;
   background-repeat: no-repeat;
+}
+
+.container-jumbotron {
+  padding: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -111,6 +115,24 @@ hr {
 
 h1.huge {
   margin-top: 0px;
-  font-size: 96px;
-  color: black;
+  margin-bottom: 10px;
+  font-size: 72px;
+}
+
+h2.huge {
+  margin-top: 10px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 574px) {
+  h1.huge {
+    margin-top: 20px;
+    font-size: 96px;
+  }
+
+  h2.huge {
+    font-size: 48px;
+  }
 }
