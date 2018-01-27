@@ -21,7 +21,7 @@ gulp.task('browserSync', function () {
 
 gulp.task('image', function () {
   return gulp.src('images/**/*')
-    .pipe(imagemin())
+    .pipe(imagemin([imagemin.jpegtran()], { verbose: true }))
     .pipe(gulp.dest('_site/images'));
 });
 

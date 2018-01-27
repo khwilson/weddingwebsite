@@ -87,17 +87,25 @@ hr {
 /* Jumbotron */
 .jumbotron {
   background-color: transparent;
-  background-image: url("images/farm.jpg");
+  background-image: url("/images/farm.jpg");
   background-size: 100%;
   background-position: center;
   min-height: 60%;
   min-height: 60vh;
   padding-top: 1rem;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
 .jumbotron {
   padding-top: 4rem;
+}
+}
+
+@media screen and (min-height: 1200px) {
+.jumbotron {
+  min-height: 720px;
+  max-height: 720px;
 }
 }
 
