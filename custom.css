@@ -83,3 +83,26 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* Jumbotron */
+.jumbotron {
+  background-color: transparent;
+  background-image: url("images/farm.jpg");
+  background-size: 100%;
+  background-position: center;
+  min-height: 60%;
+  min-height: 60vh;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+.jumbotron {
+  padding-top: 4rem;
+}
+}
+
+h1.huge {
+  margin-top: 0px;
+  font-size: 96px;
+  color: black;
+}
