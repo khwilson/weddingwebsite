@@ -1,8 +1,10 @@
 /* Default fonts and sizing for pages */
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #fcedcf;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .container {
@@ -91,7 +93,7 @@ hr {
   background-size: auto 100%;
   background-position: center;
   min-height: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 1rem;
   background-repeat: no-repeat;
 }

@@ -18,9 +18,11 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
+<div class="container {{ page.extra_classes }}">
 {% include navbar.html %}
 
 {{ content }}
+</div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
