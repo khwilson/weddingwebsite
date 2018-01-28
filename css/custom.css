@@ -1,8 +1,10 @@
 /* Default fonts and sizing for pages */
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #fcedcf;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .container {
@@ -91,7 +93,7 @@ hr {
   background-size: auto 100%;
   background-position: center;
   min-height: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 1rem;
   background-repeat: no-repeat;
 }
@@ -135,4 +137,27 @@ h2.huge {
   h2.huge {
     font-size: 48px;
   }
+}
+
+/* Central images */
+.title-image {
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 574px) {
+  .title-image {
+    max-width: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title-image {
+    max-width: 550px;
+  }
+}
+
+.subtitle {
+  font-size: 12px;
 }
