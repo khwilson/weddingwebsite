@@ -138,3 +138,26 @@ h2.huge {
     font-size: 48px;
   }
 }
+
+/* Central images */
+.title-image {
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 574px) {
+  .title-image {
+    max-width: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title-image {
+    max-width: 550px;
+  }
+}
+
+.subtitle {
+  font-size: 12px;
+}
