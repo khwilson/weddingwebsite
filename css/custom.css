@@ -119,23 +119,26 @@ h1.huge {
   margin-top: 0px;
   margin-bottom: 10px;
   font-size: 72px;
+  font-weight: 300;
 }
 
 h2.huge {
   margin-top: 10px;
   font-size: 36px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 574px) {
   h1.huge {
     margin-top: 20px;
     font-size: 96px;
+    font-weight: 100;
   }
 
   h2.huge {
     font-size: 48px;
+    font-weight: 100;
   }
 }
 
