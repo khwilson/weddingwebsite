@@ -15,5 +15,6 @@ exclude:
   - package-lock.json
   - node_modules
   - gulpfile.js
+  - vendor/bundle
 
 timezone: America/New_York
