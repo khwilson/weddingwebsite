@@ -38,7 +38,7 @@ jobs:
       # run tests!
       - run:
           name: deploy
-          command: gulp deploy
+          command: ./node_modules/.bin/gulp deploy
 
       # collect reports
       - store_test_results:
