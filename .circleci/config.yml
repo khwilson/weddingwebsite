@@ -25,6 +25,14 @@ jobs:
           - v1-dependencies-
 
       - run:
+          name: setup git name
+          command: git config --global user.name "Kevin Wilson"
+
+      - run:
+          name: setup git email
+          command: git config --global user.email "khwilson@gmail.com"
+
+      - run:
           name: install ruby dependencies
           command: |
             bundle install --jobs=4 --retry=3 --path vendor/bundle
