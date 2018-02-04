@@ -50,6 +50,7 @@ body {
 [data-toggle="collapse"].collapsed .if-not-collapsed {
   display: none;
 }
+
 [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
   display: none;
 }
@@ -68,6 +69,13 @@ h1 {
 
 h2 {
   font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
