@@ -81,6 +81,16 @@ h3 {
   text-transform: uppercase;
 }
 
+section a {
+  color: rgba(0, 0, 0, .5);
+  font-weight: 700;
+}
+
+section a:hover {
+  color: #000;
+  font-weight: 700;
+}
+
 /* Multiple section pages */
 section {
   font-family: 'Lato', sans-serif;
