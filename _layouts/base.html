@@ -20,9 +20,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Fonts -->
-    <link href="css/lato100.css" rel="stylesheet">
-    <link href="css/lato300.css" rel="stylesheet" type="text/css">
+    <!-- Fonts --> <link href="css/lato100.css" rel="stylesheet"> <link href="css/lato300.css" rel="stylesheet" type="text/css">
     <link href="css/lato400.css" rel="stylesheet" type="text/css">
     <link href="css/lato700.css" rel="stylesheet" type="text/css">
 
@@ -37,5 +35,34 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+$('#bourbonButton').on('click', function() {
+  $('#bourbonButton').text('Processing...').prop('disabled', true);
+
+  var HIDDEN_NAME = 'entry.806528314';
+  var selected = $('input[name="areaRadio"]:checked');
+  var pref = selected.length > 0 ? selected.val() : 'None';
+  var output = {};
+  $('input:not([name="areaRadio"])').each(function() {
+    if ($(this).attr('name') === HIDDEN_NAME) {
+      output[HIDDEN_NAME] = pref;
+    } else {
+      output[$(this).attr('name')] = $(this).val();
+    }
+  });
+
+  //alert($.param(output)); return false;
+
+  $.ajax({
+    type: 'POST',
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLSf5DN5Gw6zy7JKx27lRctcXuuf6CIPT07oDbRfqtmZPPG5iHw/formResponse',
+    data: $.param(output),
+    success: function() {
+      window.location.href = "thanks.html";
+    }
+  });
+});
+</script>
   </body>
 </html>
