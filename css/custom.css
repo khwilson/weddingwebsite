@@ -50,6 +50,7 @@ body {
 [data-toggle="collapse"].collapsed .if-not-collapsed {
   display: none;
 }
+
 [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
   display: none;
 }
@@ -71,6 +72,23 @@ h2 {
   font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+section a {
+  color: rgba(0, 0, 0, .5);
+  font-weight: 700;
+}
+
+section a:hover {
+  color: #000;
+  font-weight: 700;
 }
 
 /* Multiple section pages */
