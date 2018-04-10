@@ -179,6 +179,8 @@ h2.huge {
   }
 }
 
-.subtitle {
-  font-size: 12px;
+.figure-caption a {
+  color: rgb(0, 0, 0, 0.5);
+  font-weight: 700;
+  text-align: right;
 }
