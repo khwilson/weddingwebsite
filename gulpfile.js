@@ -41,15 +41,3 @@ gulp.task('jekyll', shell.task(['bundle exec jekyll build --incremental --config
 gulp.task('jekyll-force', shell.task(['bundle exec jekyll build --config _config.yml']));
 
 gulp.task('serve', shell.task(['bundle exec jekyll serve']));
-
-gulp.task('watch', function () {
-  gulp.watch('source/**/*.*', ['jekyll-rebuild']);
-  gulp.watch('source/_data/*.*', ['jekyll-rebuild-force']);
-});
-
-gulp.task('default', function (callback) {
-  runSequence(
-    ['jekyll-rebuild-force', 'watch', 'browserSync'],
-    callback
-  );
-});
