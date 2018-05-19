@@ -98,5 +98,22 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $('#torontoForm').submit(function(e) {
+        e.preventDefault()
+
+        let url = $(this).closest('form').attr('action')
+        let data = $(this).closest('form').serialize()
+
+        $.ajax({
+          url: url,
+          type: 'post',
+          data: data,
+          success: function() {
+            alert('Success')
+          }
+        })
+      })
+    </script>
   </body>
 </html>
