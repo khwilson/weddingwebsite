@@ -184,3 +184,12 @@ h2.huge {
   font-weight: 700;
   text-align: right;
 }
+
+#responseForm .form-input-label {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#responseForm {
+  margin-top: 1em;
+}

@@ -69,24 +69,26 @@
 
 <div class="container">
   <section>
-    Thank you for RSVPing to our reception in Toronto. Please fill out the
-    following form.
+    <p>
+      Thank you for RSVPing to our reception in Toronto. Please fill out the
+      following form.
+    </p>
 
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLScNL1_6EA5Kbe-MHbPqHr3v7i7Dq-YuZ6Ydj0aqLx1JlRMcmg/formResponse" method="POST">
+    <form id="responseForm" action="https://docs.google.com/forms/d/e/1FAIpQLScNL1_6EA5Kbe-MHbPqHr3v7i7Dq-YuZ6Ydj0aqLx1JlRMcmg/formResponse" method="POST">
       <div class="form-group">
-        <label for="names">Names of attendees</label>
+        <label class="form-input-label" for="names">Names of attendees</label>
         <input name="entry.732155355" id="names" type="text" aria-describedby="namesHelp" placeholder="Enter names" class="form-control" />
         <small id="namesHelp" class="form-text text-muted">Please list all names of people for whom you are RSVPing</small>
       </div>
 
       <div class="form-group">
-        <label for="number">Number of attendees</label>
+        <label class="form-input-label" for="number">Number of attendees</label>
         <input name="entry.807697771" id="number" type="number" min="1" max="10" step="1" value="1" class="form-control" aria-describedby="numberHelp" />
         <small id="numberHelp">It's easier if you parse this than the computer :)</small>
       </div>
 
       <div class="form-group">
-        <label for="willattend">Will you be attending?</label>
+        <label class="form-input-label" for="willattend">Will you be attending?</label>
         <div class="form-check">
           <input type="radio" name="entry.158460720" id="willattendYes" value="Yes" checked />
           <label for="willattendYes">Yes</label>
