@@ -85,20 +85,77 @@
       </div>
 
       <div class="form-group">
+        <label class="form-input-label" for="willattend">Will you be attending?</label>
+        <div class="form-check">
+          <input type="radio"
+                 name="entry.2014234149"
+                 id="willattendYes"
+                 value="Yes"
+                 checked
+                 onchange="$('hide-if-no').show();" />
+          <label for="willattendYes">Yes</label>
+        </div>
+        <div class="form-check">
+          <input type="radio"
+                 name="entry.2014234149"
+                 id="willattendNo"
+                 value="No"
+                 onchange="$('.hide-if-no').hide();" />
+          <label for="willattendNo">No</label>
+        </div>
+      </div>
+
+      <div class="form-group hide-if-no">
         <label class="form-input-label" for="number">Number of attendees</label>
         <input name="entry.138667618" id="number" type="number" min="1" max="10" step="1" value="1" class="form-control" aria-describedby="numberHelp" />
         <small id="numberHelp">It's easier if you parse this than the computer :)</small>
       </div>
 
-      <div class="form-group">
-        <label class="form-input-label" for="willattend">Will you be attending?</label>
+      <div class="form-group hide-if-no">
+        <label class="form-input-label" for="number">Would anyone in your party prefer a vegetarian entree on Saturday?</label>
         <div class="form-check">
-          <input type="radio" name="entry.2014234149" id="willattendYes" value="Yes" checked />
-          <label for="willattendYes">Yes</label>
+          <input type="radio" name="entry.2026384920" id="vegYes" value="Yes" checked />
+          <label for="vegYes">Yes</label>
         </div>
         <div class="form-check">
-          <input type="radio" name="entry.2014234149" id="willattendNo" value="No" />
-          <label for="willattendNo">No</label>
+          <input type="radio" name="entry.2026384920" id="vegNo" value="No" />
+          <label for="vegNo">No</label>
+        </div>
+      </div>
+
+      <div class="form-group hide-if-no">
+        <label class="form-input-label" for="number">For out-of-towners, are you planning on joining on Friday evening?</label>
+        <div class="form-check">
+          <input type="radio" name="entry.209769166" id="fridayYes" value="Yes" checked />
+          <label for="fridayYes">Yes</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="entry.209769166" id="fridayNo" value="No" />
+          <label for="fridayNo">No</label>
+        </div>
+      </div>
+
+      <div class="form-group hide-if-no">
+        <label class="form-input-label" for="number">Do you plan on joining us for Sunday brunch?</label>
+        <div class="form-check">
+          <input type="radio" name="entry.763056410" id="sundayYes" value="Yes" checked />
+          <label for="sundayYes">Yes</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="entry.763056410" id="sundayNo" value="No" />
+          <label for="sundayNo">No</label>
+        </div>
+      </div>
+
+      <div class="form-group hide-if-no">
+        <label class="form-input-label" for="number">Would you like to be connected to other guests to split a rental car?</label>
+        <div class="form-check">
+          <input type="radio" name="entry.1436485845" id="rentalYes" value="Yes" checked />
+          <label for="rentalYes">Yes</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="entry.1436485845" id="rentalNo" value="No" />
+          <label for="rentalNo">No</label>
         </div>
       </div>
 
